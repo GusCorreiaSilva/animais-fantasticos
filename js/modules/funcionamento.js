@@ -1,6 +1,5 @@
 export default function initFuncionamento() {
-}
-const funcionamento = document.querySelector('[data-semana]')
+  const funcionamento = document.querySelector('[data-semana]')
 const diasSemana = funcionamento.dataset.semana.split(',').map(Number)
 const horarioSemana = funcionamento.dataset.horario.split(',').map(Number)
 console.log(horarioSemana);
@@ -14,4 +13,5 @@ const horarioAberto = (horarioAgora >= horarioSemana[0] && horarioAgora < horari
 
 if (semanoAberto && horarioAberto) {
   funcionamento.classList.add('aberto')
+}
 }
