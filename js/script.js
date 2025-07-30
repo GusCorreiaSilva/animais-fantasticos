@@ -1,6 +1,6 @@
 import TabNav from "./modules/tabnav.js";
 import Accordion from "./modules/accordion.js";
-import modal from "./modules/modal.js";
+import Modal from "./modules/modal.js";
 import initToolTip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
@@ -22,7 +22,13 @@ const tabNav = new TabNav(
 );
 tabNav.init();
 
-modal();
+const modal = new Modal(
+  '[data-modal="abrir"]',
+  '[data-modal="fechar"]',
+  '[data-modal="container"]'
+);
+modal.init();
+
 initToolTip();
 initDropdownMenu();
 initMenuMobile();
