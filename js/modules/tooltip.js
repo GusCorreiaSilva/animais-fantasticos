@@ -45,7 +45,7 @@ export default class initToolTip {
   addTooltipsEvent() {
     this.tools.forEach((tool) => {
       tool.addEventListener("mouseover", this.onMouseOver);
-    })
+    });
   }
   init() {
     if (this.tools.length) {
