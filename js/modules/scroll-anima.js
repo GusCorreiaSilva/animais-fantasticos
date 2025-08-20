@@ -4,7 +4,7 @@ export default class ScrollAnima {
     this.sections = document.querySelectorAll(sections);
     this.windowMetade = window.innerHeight * 0.6;
 
-    this.checkDistance = (this.checkDistance.bind(this), 50);
+    this.checkDistance = debounce(this.checkDistance.bind(this), 50);
   }
   // pega a distancia de cada item em relação ao topo do site
   getDistance() {
