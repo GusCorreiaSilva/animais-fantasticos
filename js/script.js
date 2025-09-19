@@ -11,8 +11,6 @@ import ScrollSuave from "./modules/scrollSuave.js";
 import AnimaScroll from "./modules/scroll-anima.js";
 import SlideNav from "./modules/slide.js";
 
-
-
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
@@ -53,5 +51,4 @@ FetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 const slide = new SlideNav(".slide", ".slide-wrapper");
 slide.init();
-slide.addArrow(".prev", ".next");
 slide.addControl(".custom-controls");
